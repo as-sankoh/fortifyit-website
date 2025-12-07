@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FortifyIT Consulting</title>
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="FortifyIT Consulting provides modern cybersecurity, cloud solutions, IT infrastructure, and advisory services.">
   <meta name="keywords" content="cybersecurity, IT consulting, cloud solutions, network security, RMF, NIST, IT support, AWS, Azure, Microsoft 365">
@@ -9,86 +13,235 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://via.placeholder.com/300x200">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FortifyIT Consulting</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f5f7fb;
       color: #1f1f1f;
+      scroll-behavior: smooth;
     }
+
+    /* NAVBAR */
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #d9d9d9;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .wrapper {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #0a3d91;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 20px;
+    }
+
+    /* HEADER */
     header {
       background-color: #0a3d91;
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: bold;
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0a3d91, #1a73e8);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
     }
-    header p {
-      margin: 10px 0 0;
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      margin-top: 20px;
       font-size: 1.2rem;
     }
+    .hero a {
+      display: inline-block;
+      margin-top: 25px;
+      background: white;
+      color: #0a3d91;
+      padding: 14px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero a:hover {
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
     .section {
-      padding: 50px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
     }
     .section h2 {
       color: #0a3d91;
-      font-size: 2rem;
-      margin-bottom: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
     }
-    .services-grid {
+
+    /* SERVICES ICON ROW */
+    .icon-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-bottom: 35px;
+    }
+    .icon-row div {
+      text-align: center;
+    }
+    .icon-row span {
+      font-size: 50px;
+    }
+
+    /* GRID CARDS */
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
-    .service-box {
+    .card {
       background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       border-left: 5px solid #1a73e8;
     }
+
+    /* FOOTER */
     footer {
       background-color: #0a3d91;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       margin-top: 40px;
     }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 26px;
+      text-decoration: none;
+    }
 
-    /* Animation Styles */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+    /* Fade-in Animation */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all .8s ease-out; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
   </style>
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav style="background:#ffffff; border-bottom:1px solid #d9d9d9; padding:15px 20px; position:sticky; top:0; z-index:100;">
-    <div style="max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center;">
-      <div style="font-size:1.4rem; font-weight:bold; color:#0a3d91;">FortifyIT</div>
-      <div style="display:flex; gap:25px;">
-        <a href="#about" style="color:#0a3d91; text-decoration:none; font-weight:500;">About</a>
-        <a href="#services" style="color:#0a3d91; text-decoration:none; font-weight:500;">Services</a>
-        <a href="#contact" style="color:#0a3d91; text-decoration:none; font-weight:500;">Contact</a>
+
+  <!-- NAV -->
+  <nav>
+    <div class="wrapper">
+      <div style="font-size:1.5rem; font-weight:bold; color:#0a3d91;">FortifyIT</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
+  <!-- HEADER -->
   <header>
     <h1>FortifyIT Consulting</h1>
     <p>Modern Cybersecurity & IT Solutions</p>
   </header>
 
-  <!-- Hero Section -->
-  <section style="background: linear-gradient(135deg, #0a3d91, #1a73e8); padding: 80px 20px; text-align: center; color: white;">
-    <h1 style="font-size: 2.8rem; margin: 0; font-weight: bold;">Protect. Modernize. Fortify.</h1>
-    <p style="font-size: 1.2rem; margin-top: 15px; max-width: 700px
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Protect. Modernize. Fortify.</h1>
+    <p>Enterprise-grade cybersecurity and IT solutions designed to strengthen your digital infrastructure.</p>
+    <a href="#contact">Get Started</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section fade-in" id="about">
+    <h2>About Us</h2>
+    <p>
+      FortifyIT Consulting delivers secure, modern IT and cybersecurity solutions designed to protect and empower organizations.
+      Our mission is to strengthen digital infrastructure with enterprise-level security and cloud modernization.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section fade-in" id="services">
+    <h2>Our Services</h2>
+
+    <div class="icon-row">
+      <div><span>🛡️</span><p><b>Cybersecurity</b></p></div>
+      <div><span>☁️</span><p><b>Cloud Solutions</b></p></div>
+      <div><span>🖧</span><p><b>Infrastructure</b></p></div>
+      <div><span>🖥️</span><p><b>IT Operations</b></p></div>
+      <div><span>📊</span><p><b>Advisory</b></p></div>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h3>Cybersecurity</h3><p>Threat detection, endpoint protection, RMF, NIST, CMMC compliance.</p></div>
+      <div class="card"><h3>Cloud Solutions</h3><p>AWS, Azure, secure cloud migration, and scalable cloud architecture.</p></div>
+      <div class="card"><h3>IT Infrastructure</h3><p>Networks, servers, virtualization, systems optimization.</p></div>
+      <div class="card"><h3>IT Support Operations</h3><p>Helpdesk, patching, endpoint management, enterprise IT support.</p></div>
+      <div class="card"><h3>Consulting & Advisory</h3><p>Security assessments, modernization strategy, IT roadmap planning.</p></div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section fade-in">
+    <h2>Why Choose Us</h2>
+    <div class="grid">
+      <div class="card"><h3>Security-First</h3><p>We prioritize protection using industry-leading cybersecurity practices.</p></div>
+      <div class="card"><h3>Modern Solutions</h3><p>We leverage modern cloud & IT technologies to prepare you for the future.</p></div>
+      <div class="card"><h3>Federal & Enterprise Expertise</h3><p>Deep experience across federal agencies & large-scale systems.</p></div>
+      <div class="card"><h3>Reliable Support</h3><p>Dedicated, fast, and always available when your team needs help.</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section fade-in" id="contact">
+    <h2>Contact Us</h2>
+    <p><b>Email:</b> info@fortifyit.consulting</p>
+    <p><b>Support:</b> support@fortifyit.consulting</p>
+    <p><b>Phone:</b> 240-305-0483</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://linkedin.com/in/abdulai-sankoh">🔗</a>
+    <a href="mailto:info@fortifyit.consulting">✉️</a>
+    <a href="https://fortifyit.consulting">🌐</a>
+    <p>© 2025 FortifyIT Consulting — All Rights Reserved</p>
+  </footer>
+
+  <!-- Scroll Animation -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.1 });
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
