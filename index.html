@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FortifyIT Consulting</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="FortifyIT Consulting provides modern cybersecurity, cloud solutions, IT infrastructure, and advisory services.">
   <meta name="keywords" content="cybersecurity, IT consulting, cloud solutions, network security, RMF, NIST, IT support, AWS, Azure, Microsoft 365">
-  <meta property="og:title" content="FortifyIT Consulting – Modern Cybersecurity & IT Solutions">
-  <meta property="og:description" content="Enterprise-grade cybersecurity and IT solutions for modern businesses and federal organizations.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://via.placeholder.com/300x200">
 
   <style>
     body {
@@ -25,8 +24,8 @@
     /* NAVBAR */
     nav {
       background: #ffffff;
+      padding: 12px 20px;
       border-bottom: 1px solid #d9d9d9;
-      padding: 15px 20px;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -38,19 +37,16 @@
       justify-content: space-between;
       align-items: center;
     }
+    nav img.logo {
+      height: 48px;
+      width: auto;
+    }
     nav a {
       color: #0a3d91;
       text-decoration: none;
-      font-weight: 500;
-      margin-left: 20px;
-    }
-
-    /* HEADER */
-    header {
-      background-color: #0a3d91;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
+      font-weight: 600;
+      margin-left: 24px;
+      font-size: 1rem;
     }
 
     /* HERO */
@@ -58,17 +54,22 @@
       background: linear-gradient(135deg, #0a3d91, #1a73e8);
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px 90px;
+    }
+    .hero img.hero-logo {
+      width: 180px;
+      margin-bottom: 25px;
     }
     .hero h1 {
       font-size: 3rem;
       margin: 0;
+      font-weight: bold;
     }
     .hero p {
       max-width: 700px;
-      margin: auto;
-      margin-top: 20px;
+      margin: 15px auto 0;
       font-size: 1.2rem;
+      line-height: 1.6;
     }
     .hero a {
       display: inline-block;
@@ -79,13 +80,13 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
+      transition: 0.2s;
     }
     .hero a:hover {
-      transform: scale(1.05);
+      transform: scale(1.06);
     }
 
-    /* SECTIONS */
+    /* SECTION */
     .section {
       padding: 60px 20px;
       max-width: 1100px;
@@ -96,24 +97,9 @@
       text-align: center;
       margin-bottom: 30px;
       font-size: 2.2rem;
+      font-weight: 700;
     }
 
-    /* SERVICES ICON ROW */
-    .icon-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 25px;
-      margin-bottom: 35px;
-    }
-    .icon-row div {
-      text-align: center;
-    }
-    .icon-row span {
-      font-size: 50px;
-    }
-
-    /* GRID CARDS */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -132,8 +118,8 @@
       background-color: #0a3d91;
       color: white;
       text-align: center;
-      padding: 30px 20px;
-      margin-top: 40px;
+      padding: 40px 20px;
+      margin-top: 60px;
     }
     footer a {
       color: white;
@@ -141,10 +127,6 @@
       font-size: 26px;
       text-decoration: none;
     }
-
-    /* Fade-in Animation */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: all .8s ease-out; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
   </style>
 </head>
 
@@ -153,7 +135,7 @@
   <!-- NAV -->
   <nav>
     <div class="wrapper">
-      <div style="font-size:1.5rem; font-weight:bold; color:#0a3d91;">FortifyIT</div>
+      <img src="logo-navbar.png" class="logo" alt="FortifyIT Logo">
       <div>
         <a href="#about">About</a>
         <a href="#services">Services</a>
@@ -162,21 +144,16 @@
     </div>
   </nav>
 
-  <!-- HEADER -->
-  <header>
-    <h1>FortifyIT Consulting</h1>
-    <p>Modern Cybersecurity & IT Solutions</p>
-  </header>
-
   <!-- HERO -->
   <section class="hero">
+    <img src="logo-hero.png" class="hero-logo" alt="FortifyIT Consulting Logo">
     <h1>Protect. Modernize. Fortify.</h1>
     <p>Enterprise-grade cybersecurity and IT solutions designed to strengthen your digital infrastructure.</p>
     <a href="#contact">Get Started</a>
   </section>
 
   <!-- ABOUT -->
-  <section class="section fade-in" id="about">
+  <section class="section" id="about">
     <h2>About Us</h2>
     <p>
       FortifyIT Consulting delivers secure, modern IT and cybersecurity solutions designed to protect and empower organizations.
@@ -185,39 +162,20 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="section fade-in" id="services">
+  <section class="section" id="services">
     <h2>Our Services</h2>
-
-    <div class="icon-row">
-      <div><span>🛡️</span><p><b>Cybersecurity</b></p></div>
-      <div><span>☁️</span><p><b>Cloud Solutions</b></p></div>
-      <div><span>🖧</span><p><b>Infrastructure</b></p></div>
-      <div><span>🖥️</span><p><b>IT Operations</b></p></div>
-      <div><span>📊</span><p><b>Advisory</b></p></div>
-    </div>
 
     <div class="grid">
       <div class="card"><h3>Cybersecurity</h3><p>Threat detection, endpoint protection, RMF, NIST, CMMC compliance.</p></div>
       <div class="card"><h3>Cloud Solutions</h3><p>AWS, Azure, secure cloud migration, and scalable cloud architecture.</p></div>
       <div class="card"><h3>IT Infrastructure</h3><p>Networks, servers, virtualization, systems optimization.</p></div>
-      <div class="card"><h3>IT Support Operations</h3><p>Helpdesk, patching, endpoint management, enterprise IT support.</p></div>
+      <div class="card"><h3>IT Operations</h3><p>Helpdesk, patching, endpoint management, enterprise IT support.</p></div>
       <div class="card"><h3>Consulting & Advisory</h3><p>Security assessments, modernization strategy, IT roadmap planning.</p></div>
     </div>
   </section>
 
-  <!-- WHY US -->
-  <section class="section fade-in">
-    <h2>Why Choose Us</h2>
-    <div class="grid">
-      <div class="card"><h3>Security-First</h3><p>We prioritize protection using industry-leading cybersecurity practices.</p></div>
-      <div class="card"><h3>Modern Solutions</h3><p>We leverage modern cloud & IT technologies to prepare you for the future.</p></div>
-      <div class="card"><h3>Federal & Enterprise Expertise</h3><p>Deep experience across federal agencies & large-scale systems.</p></div>
-      <div class="card"><h3>Reliable Support</h3><p>Dedicated, fast, and always available when your team needs help.</p></div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
-  <section class="section fade-in" id="contact">
+  <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p><b>Email:</b> info@fortifyit.consulting</p>
     <p><b>Support:</b> support@fortifyit.consulting</p>
@@ -231,17 +189,6 @@
     <a href="https://fortifyit.consulting">🌐</a>
     <p>© 2025 FortifyIT Consulting — All Rights Reserved</p>
   </footer>
-
-  <!-- Scroll Animation -->
-  <script>
-    const faders = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("visible");
-      });
-    }, { threshold: 0.1 });
-    faders.forEach(el => observer.observe(el));
-  </script>
 
 </body>
 </html>
