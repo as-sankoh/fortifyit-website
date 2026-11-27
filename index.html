@@ -1,190 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- SEO: HOME PAGE -->
-<meta name="description" content="FortifyIT Consulting provides cybersecurity, cloud modernization, IT infrastructure, and enterprise IT support designed to protect and strengthen your organization.">
-<meta name="keywords" content="FortifyIT Consulting, cybersecurity, IT consulting, cloud solutions, Azure, AWS, NIST RMF, network security, IT infrastructure, government IT, enterprise IT support">
-<meta name="author" content="FortifyIT Consulting">
-
-<!-- Open Graph -->
-<meta property="og:title" content="FortifyIT Consulting — Cybersecurity & IT Solutions">
-<meta property="og:description" content="Modern cybersecurity, cloud architecture, and IT infrastructure services. Protect. Modernize. Fortify.">
-<meta property="og:image" content="https://fortifyit.consulting/logo-hero.png">
-<meta property="og:url" content="https://fortifyit.consulting">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FortifyIT Consulting">
-<meta name="twitter:description" content="Cybersecurity and IT modernization services for businesses and agencies.">
-<meta name="twitter:image" content="https://fortifyit.consulting/logo-hero.png">
-
-</script>
-
-  
-<meta name="description" content="FortifyIT Consulting delivers modern cybersecurity, cloud architecture, and IT infrastructure solutions that protect, optimize, and modernize your business.">
-<meta name="keywords" content="FortifyIT Consulting, cybersecurity services, IT consulting, RMF, NIST, cloud migration, Azure, AWS, network security, IT infrastructure, systems administration, helpdesk operations, Microsoft 365">
-<meta name="author" content="FortifyIT Consulting">
-
-<!-- Open Graph (For Social Media Sharing) -->
-<meta property="og:title" content="FortifyIT Consulting — Cybersecurity & IT Solutions">
-<meta property="og:description" content="Enterprise-grade cybersecurity, cloud solutions, and IT modernization services. Protect. Modernize. Fortify.">
-<meta property="og:image" content="https://fortifyit.consulting/logo-hero.png">
-<meta property="og:url" content="https://fortifyit.consulting">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FortifyIT Consulting — Cybersecurity & IT Solutions">
-<meta name="twitter:description" content="Modern cybersecurity and cloud solutions for businesses and organizations.">
-<meta name="twitter:image" content="https://fortifyit.consulting/logo-hero.png">
-
-
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSKQCZJFGV"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FortifyIT Consulting | IT & Cybersecurity Services</title>
+  <meta name="description" content="FortifyIT Consulting LLC provides practical IT support, Microsoft 365 administration, cybersecurity consulting, and cloud and infrastructure services.">
+  <meta name="author" content="FortifyIT Consulting">
+  <link rel="canonical" href="https://fortifyit.consulting/">
+  <meta property="og:title" content="FortifyIT Consulting | IT & Cybersecurity Services">
+  <meta property="og:description" content="Protect your business, modernize your technology, and strengthen your IT operations.">
+  <meta property="og:image" content="https://fortifyit.consulting/logo-hero.png">
+  <meta property="og:url" content="https://fortifyit.consulting/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://fortifyit.consulting/logo-hero.png">
+  <link rel="icon" type="image/png" href="logo-hero.png">
+  <style>
+    :root { --navy:#0a3d91; --blue:#1a73e8; --ink:#162a43; --muted:#516078; --line:#dce4ef; --surface:#f5f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,sans-serif; color:var(--ink); background:white; line-height:1.65; }
+    a { color:var(--navy); }
+    a:focus-visible { outline:3px solid #58a6ff; outline-offset:4px; }
+    .container { max-width:1120px; margin:auto; padding-inline:24px; }
+    nav { background:white; border-bottom:1px solid var(--line); }
+    .nav-inner { display:flex; justify-content:space-between; align-items:center; gap:20px; padding-block:13px; }
+    .brand { display:flex; gap:10px; align-items:center; color:var(--navy); font-weight:700; text-decoration:none; line-height:1.2; }
+    .brand img { width:48px; height:48px; object-fit:contain; }
+    .links { display:flex; flex-wrap:wrap; gap:clamp(12px,3vw,26px); align-items:center; }
+    .links a { font-weight:600; text-decoration:none; }
+    .links a:hover { text-decoration:underline; }
+    .hero { background:linear-gradient(135deg,#082c69,#145cbd); color:white; }
+    .hero-inner { display:grid; grid-template-columns:1.5fr 1fr; gap:40px; align-items:center; padding-block:78px; }
+    h1 { font-size:clamp(2.35rem,5vw,4rem); line-height:1.12; letter-spacing:-.04em; margin:0 0 20px; }
+    .hero p { font-size:1.15rem; max-width:650px; margin:0 0 28px; color:#e7efff; }
+    .hero img { width:min(100%,250px); height:auto; display:block; margin:auto; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; }
+    .button { display:inline-block; color:white; background:var(--navy); border:1px solid var(--navy); border-radius:6px; text-decoration:none; font-weight:700; padding:12px 22px; }
+    .button:hover { filter:brightness(.94); }
+    .hero .button { background:white; color:var(--navy); border-color:white; }
+    .hero .secondary { background:transparent; color:white; border-color:#a2c6ff; }
+    section { padding-block:62px; }
+    h2 { font-size:clamp(1.65rem,3vw,2.25rem); letter-spacing:-.02em; line-height:1.25; margin:0 0 12px; }
+    .lead { color:var(--muted); max-width:700px; margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .card { border:1px solid var(--line); border-top:4px solid var(--blue); padding:26px; border-radius:10px; background:white; }
+    h3 { font-size:1.2rem; color:var(--navy); margin:0 0 8px; }
+    .card p { margin:0; color:var(--muted); }
+    .about { background:var(--surface); }
+    .about-inner { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start; }
+    .about p { color:var(--muted); margin:0 0 20px; }
+    .values { display:grid; gap:12px; }
+    .value { border-left:3px solid var(--blue); padding:5px 16px; }
+    .value strong { display:block; color:var(--navy); }
+    .cta { text-align:center; background:#e6efff; padding-block:48px; }
+    .cta p { margin:0 auto 22px; max-width:650px; color:var(--muted); }
+    footer { background:#082c69; color:#e7efff; padding-block:28px; }
+    .footer-inner { display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap; }
+    footer a { color:white; }
+    footer p { margin:0; }
+    @media(max-width:680px) {
+      .container { padding-inline:18px; }
+      .nav-inner { flex-wrap:wrap; gap:8px; }
+      .links { width:100%; gap:20px; justify-content:space-between; font-size:.92rem; }
+      .hero-inner { grid-template-columns:1fr; padding-block:38px 48px; text-align:center; gap:24px; }
+      .hero img { grid-row:1; width:130px; }
+      .actions { justify-content:center; }
+      .grid,.about-inner { grid-template-columns:1fr; gap:16px; }
+      section { padding-block:42px; }
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSKQCZJFGV"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-DSKQCZJFGV');
 </script>
-<!-- End Google Analytics -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FortifyIT Consulting</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="FortifyIT Consulting provides modern cybersecurity, cloud solutions, IT infrastructure, and advisory services.">
-  <meta name="keywords" content="cybersecurity, IT consulting, cloud solutions, network security, RMF, NIST, IT support, AWS, Azure, Microsoft 365">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fb;
-      color: #1f1f1f;
-      scroll-behavior: smooth;
-    }
-
-    /* NAVBAR */
-    nav {
-      background: #ffffff;
-      padding: 12px 20px;
-      border-bottom: 1px solid #d9d9d9;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav .wrapper {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav img.logo {
-      height: 48px;
-      width: auto;
-    }
-    nav a {
-      color: #0a3d91;
-      text-decoration: none;
-      font-weight: 600;
-      margin-left: 24px;
-      font-size: 1rem;
-    }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(135deg, #0a3d91, #1a73e8);
-      color: white;
-      text-align: center;
-      padding: 100px 20px 90px;
-    }
-    .hero img.hero-logo {
-      width: 180px;
-      margin-bottom: 25px;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-      font-weight: bold;
-    }
-    .hero p {
-      max-width: 700px;
-      margin: 15px auto 0;
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-    .hero a {
-      display: inline-block;
-      margin-top: 25px;
-      background: white;
-      color: #0a3d91;
-      padding: 14px 30px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-    .hero a:hover {
-      transform: scale(1.06);
-    }
-
-    /* SECTION */
-    .section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #0a3d91;
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2.2rem;
-      font-weight: 700;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      border-left: 5px solid #1a73e8;
-    }
-
-    /* FOOTER */
-    footer {
-      background-color: #0a3d91;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 60px;
-    }
-    footer a {
-      color: white;
-      margin: 0 10px;
-      font-size: 26px;
-      text-decoration: none;
-    }
-  </style>
-</head>
-  <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5SZ3KPQW');</script>
-<!-- End Google Tag Manager -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -204,100 +100,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ]
 }
 </script>
-
-<body> <!-- Performance Optimization -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-  <!-- NAV -->
-  <nav>
-    <div class="wrapper">
-      <img src="logo-hero.png" class="logo" alt="FortifyIT Logo">
-      <div>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="logo-hero.png" class="hero-logo" alt="FortifyIT Consulting Logo">
-    <h1>Protect. Modernize. Fortify.</h1>
-    <p>Enterprise-grade cybersecurity and IT solutions designed to strengthen your digital infrastructure.</p>
-    <a href="contact.html">Get Started</a>
-  </section>
-
- <!-- SEO: ABOUT PAGE -->
-<meta name="description" content="Learn about FortifyIT Consulting, our mission, and our commitment to delivering secure, modern IT solutions including cybersecurity, cloud architecture, and enterprise infrastructure.">
-<meta name="keywords" content="About FortifyIT, IT consulting company, cybersecurity firm, cloud modernization experts, enterprise IT support, security engineers">
-<meta name="author" content="FortifyIT Consulting">
-
-<!-- Open Graph -->
-<meta property="og:title" content="About FortifyIT Consulting">
-<meta property="og:description" content="Discover who we are and how we deliver cybersecurity and IT modernization services with excellence and integrity.">
-<meta property="og:image" content="https://fortifyit.consulting/logo-hero.png">
-<meta property="og:url" content="https://fortifyit.consulting/about.html">
-<meta property="og:type" content="article">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About FortifyIT Consulting">
-<meta name="twitter:description" content="Professional cybersecurity and IT consulting trusted by businesses and agencies.">
-<meta name="twitter:image" content="https://fortifyit.consulting/logo-hero.png">
-
-
-  <!-- SEO: SERVICES PAGE -->
-<meta name="description" content="Explore FortifyIT Consulting services: cybersecurity, cloud solutions, IT infrastructure, enterprise support, RMF/NIST compliance, and modernization advisory.">
-<meta name="keywords" content="cybersecurity services, cloud migration, Azure solutions, AWS architecture, network security, RMF, NIST, IT support, consulting services">
-<meta name="author" content="FortifyIT Consulting">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Our Services — FortifyIT Consulting">
-<meta property="og:description" content="Cybersecurity, cloud architecture, IT infrastructure, and enterprise support tailored to your organization’s needs.">
-<meta property="og:image" content="https://fortifyit.consulting/logo-hero.png">
-<meta property="og:url" content="https://fortifyit.consulting/services.html">
-<meta property="og:type" content="article">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FortifyIT Consulting — Services">
-<meta name="twitter:description" content="Premium IT and cybersecurity services designed to secure and modernize your business.">
-<meta name="twitter:image" content="https://fortifyit.consulting/logo-hero.png">
-
-  <!-- SEO: CONTACT PAGE -->
-<meta name="description" content="Contact FortifyIT Consulting for cybersecurity, cloud solutions, IT support, and advisory services. Get in touch with our expert team today.">
-<meta name="keywords" content="contact FortifyIT, IT consulting contact, cybersecurity help, cloud support, IT service request, cybersecurity consultation">
-<meta name="author" content="FortifyIT Consulting">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Contact FortifyIT Consulting">
-<meta property="og:description" content="Reach out to our team for IT support, cybersecurity solutions, and professional advisory services.">
-<meta property="og:image" content="https://fortifyit.consulting/logo-hero.png">
-<meta property="og:url" content="https://fortifyit.consulting/contact.html">
-<meta property="og:type" content="article">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Contact FortifyIT Consulting">
-<meta name="twitter:description" content="We’re here to support your IT and cybersecurity needs — contact our team today.">
-<meta name="twitter:image" content="https://fortifyit.consulting/logo-hero.png">
-
-
-  <!-- FOOTER -->
-  <footer>
-    <a href="https://linkedin.com/in/abdulai-sankoh">🔗</a>
-    <a href="mailto:info@fortifyit.consulting">✉️</a>
-    <a href="https://fortifyit.consulting">🌐</a>
-    <p>© 2025 FortifyIT Consulting — All Rights Reserved</p>
-  </footer>
-
-</body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SZ3KPQW"
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SZ3KPQW"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+  <nav aria-label="Main navigation"><div class="container nav-inner">
+    <a class="brand" href="index.html" aria-current="page"><img src="logo-hero.png" alt=""><span>FortifyIT<br>Consulting</span></a>
+    <div class="links"><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+  </div></nav>
+  <header class="hero"><div class="container hero-inner">
+    <div><h1>Protect. Modernize. Fortify.</h1><p>Dependable IT support, cybersecurity consulting, and cloud solutions for organizations that need secure, reliable technology.</p><div class="actions"><a class="button" href="contact.html">Get Started</a><a class="button secondary" href="services.html">Explore Services</a></div></div>
+    <img src="logo-hero.png" alt="FortifyIT Consulting shield">
+  </div></header>
+  <main>
+    <section class="container" aria-labelledby="services-heading">
+      <h2 id="services-heading">Technology that supports your business</h2>
+      <p class="lead">Our consulting services help you address day-to-day IT challenges, manage your systems, and improve your security posture.</p>
+      <div class="grid">
+        <article class="card"><h3>IT Support & Operations</h3><p>Desktop support, endpoint management, troubleshooting, and IT operations.</p></article>
+        <article class="card"><h3>Microsoft 365 & Identity</h3><p>Microsoft 365 administration, identity management, secure email, and collaboration.</p></article>
+        <article class="card"><h3>Cybersecurity Consulting</h3><p>Security assessments, remediation planning, endpoint protection, and risk management guidance.</p></article>
+        <article class="card"><h3>Cloud & Infrastructure</h3><p>Azure and AWS advisory, systems administration, and modernization planning.</p></article>
+      </div>
+      <p style="margin:24px 0 0"><a href="services.html">View all services →</a></p>
+    </section>
+    <section class="about"><div class="container about-inner">
+      <div><h2>Experience you can rely on</h2><p>FortifyIT Consulting LLC brings over a decade of hands-on IT experience in enterprise and federal environments to practical technology consulting.</p><a href="about.html">About FortifyIT Consulting →</a></div>
+      <div class="values">
+        <div class="value"><strong>Integrity</strong> Clear communication and responsible handling of information.</div>
+        <div class="value"><strong>Reliability</strong> Dependable systems and consistent service.</div>
+        <div class="value"><strong>Security</strong> Sound security practices throughout IT operations.</div>
+      </div>
+    </div></section>
+    <section class="cta"><div class="container"><h2>Let's discuss your IT needs</h2><p>Tell us about your organization and the technology challenges you want to solve.</p><a class="button" href="contact.html">Contact FortifyIT</a></div></section>
+  </main>
+  <footer><div class="container footer-inner"><p>© 2026 FortifyIT Consulting LLC</p><a href="mailto:info@fortifyit.consulting">info@fortifyit.consulting</a><a href="https://linkedin.com/in/abdulai-sankoh">LinkedIn</a></div></footer>
+</body>
 </html>
